@@ -18,9 +18,9 @@ def save_to_database(data, predicted_grade):
     try:
         conn = pymysql.connect(
             host="localhost",
-            user="root",
-            password="root",
-            database="studentdetails"
+            user="",
+            password="",
+            database=""
         )
         cursor = conn.cursor()
         # Insert student details including predicted grade
