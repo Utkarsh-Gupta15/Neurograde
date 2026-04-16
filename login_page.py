@@ -176,9 +176,9 @@ class LoginPage(QWidget):
         try:
             conn = pymysql.connect(
                 host="localhost",
-                user="root",
-                password="root",
-                database="userdb"
+                user="",
+                password="",
+                database=""
             )
             cursor = conn.cursor()
             cursor.execute(
