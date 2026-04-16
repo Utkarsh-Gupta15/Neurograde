@@ -180,10 +180,10 @@ class PredictionWindow(QWidget):
     # ------------------ DATABASE ------------------
     def connect_db(self):
         return pymysql.connect(
-            host="localhost",
-            user="root",
-            password="root",
-            database="studentdetails"
+            host="",
+            user="",
+            password="",
+            database=""
         )
 
     def fetch_all_students(self):
