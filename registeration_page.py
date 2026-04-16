@@ -178,7 +178,7 @@ class RegisterPage(QWidget):
             QMessageBox.warning(self, "Password Error", "Passwords do not match.")
             return
         try:
-            conn = pymysql.connect(host="localhost", user="root", password="root", database="userdb")
+            conn = pymysql.connect(host="localhost", user="", password="", database="")
             cursor = conn.cursor()
             cursor.execute("INSERT INTO users (username,email,password) VALUES (%s,%s,%s)", (u,e,p))
             conn.commit()
